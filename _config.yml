@@ -1,0 +1,6 @@
+site_name: 'Sean Day'
+markdown: rdiscount
+rdiscount:
+	extensions:[smart]
+permalink: /post/:title
+paginate: 6

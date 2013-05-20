@@ -1,0 +1,196 @@
+html, body, div, span, applet, object, iframe,
+h1,
+h3,
+h4,
+h5,
+h6,
+p.meta, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'quaver_sansregular';
+  src: url("../../fonts/quaversans-webfont.eot");
+  src: url("../../fonts/quaversans-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/quaversans-webfont.woff") format("woff"), url("../../fonts/quaversans-webfont.ttf") format("truetype"), url("../../fonts/quaversans-webfont.svg#quaver_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'surfregular';
+  src: url("../../fonts/surf-webfont.eot");
+  src: url("../../fonts/surf-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/surf-webfont.woff") format("woff"), url("../../fonts/surf-webfont.ttf") format("truetype"), url("../../fonts/surf-webfont.svg#surfregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-size: 62.5%;
+  line-height: 62.5%;
+}
+
+h1, h3, h4, h5, h6, p.meta, h2 {
+  font-family: "surfregular";
+  font-size: 2.4em;
+  color: #95a5a6;
+  text-transform: uppercase;
+  color: #7f8c8d;
+}
+h1 a, h3 a, h4 a, h5 a, h6 a, p.meta a, h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h3, h4, h5, h6 {
+  font-size: 1.6em;
+}
+
+h2 {
+  margin-bottom: .8em;
+}
+
+h2 + p.meta {
+  margin-bottom: 1em;
+}
+
+p.meta {
+  font-size: 1.6em;
+  color: #1abc9c;
+}
+
+p {
+  font-size: 1.3em;
+  color: #95a5a6;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.8em;
+  padding-bottom: 1em;
+  border-bottom: 1px #ebedee solid;
+  margin-bottom: 1.2em;
+}
+p a {
+  color: #e74c3c;
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bold;
+}
+p a:visited {
+  color: #e74c3c;
+}
+p a:hover, p a:focus {
+  color: #1abc9c;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+header#main-header, footer#main-footer {
+  background-color: #e74c3c;
+  color: #f2f2f2;
+  border-bottom: 1px #c0392b solid;
+  width: 100%;
+}
+
+footer#main-footer {
+  border-bottom: none;
+  border-top: 1px #c0392b solid;
+  height: 18px;
+}
+
+nav#main-navigation, section#body-content, div.container {
+  width: 60.4166667%;
+  max-width: 870px;
+  margin: 0 auto;
+}
+
+/* MAIN NAVIGATION */
+nav#main-navigation {
+  text-align: center;
+}
+nav#main-navigation h1, nav#main-navigation h3, nav#main-navigation h4, nav#main-navigation h5, nav#main-navigation h6, nav#main-navigation p.meta {
+  text-indent: -9999em;
+  background: url("../../images/logo.svg") no-repeat center center;
+  background-size: 100% 100%;
+  width: 163px;
+  height: 163px;
+}
+
+nav#main-navigation ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 30px;
+  font-family: "quaver_sansregular";
+  font-size: 1.4em;
+  color: #f2f2f2;
+  text-align: left;
+}
+nav#main-navigation ul li a {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+nav#main-navigation ul li a:hover, nav#main-navigation ul li a:focus {
+  border-bottom: 1px #f2f2f2 solid;
+}
+nav#main-navigation ul li a:visited {
+  text-decoration: none;
+}
+
+/* BODY SECTION */
+section#body-content {
+  margin-top: 30px;
+}

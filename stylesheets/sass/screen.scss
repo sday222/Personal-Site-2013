@@ -12,6 +12,10 @@ body {
 	background-color: $white;
 }
 
+img {
+	max-width: 100%;
+}
+
 header#main-header {
 	background-color: $red;
 	color: $white;
@@ -94,7 +98,7 @@ nav#page-navigation {
 	
 }
 img.circle {
-	border: 8px $turq solid; // 8px / 232px
+	border: 8px $turq solid; // doesnt need to be a % because we are using box-sizing: border-box
 	@include border-radius(1000px);
 	margin: 1.7%;
 	width: 29.333333333%;

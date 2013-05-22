@@ -64,7 +64,7 @@ nav#main-navigation ul li {
 		&:hover, &:focus {
 			border-bottom: 1px $white solid;
 			@include transition-property(border-bottom);
-			@include transition-duration(0.3s);
+			@include transition-duration(0.25s);
 		}
 		&:visited {
 			text-decoration: none;
@@ -117,8 +117,39 @@ nav#social-links {
 		list-style: none;
 		margin-left: 3px;
 		margin-right: 3px;
+		i {
+			display: inline-block;
+			width: 24px;
+			height: 24px;
+			background: url('../../images/social-sprite.png') no-repeat;
+			&.github {
+				background-position: -24px 0;
+				&:hover, &:focus {
+					background-position: -24px -24px;
+				}
+			}
+			&.dribbble {
+				background-position: 0 0;
+				&:hover, &:focus {
+					background-position: 0 -24px;
+				}
+			}
+			&.instagram {
+				background-position: -48px 0;
+				&:hover, &:focus {
+					background-position: -48px -24px;
+				}
+			}
+			&.twitter {
+				background-position: -72px 0;
+				&:hover, &:focus {
+					background-position: -72px -24px;
+				}
+			}
+		}
 	}
 }
+
 p.crafted-location {
 	font-family: $wisdom;
 	color: $red;

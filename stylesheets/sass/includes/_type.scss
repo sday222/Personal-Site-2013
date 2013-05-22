@@ -77,7 +77,7 @@ p.meta {
 
 a {
 	@include transition-property(color);
-	@include transition-duration(0.2s);
+	@include transition-duration(0.15s);
 }
 
 p {

@@ -38,6 +38,7 @@
 $quaver: 'quaver_sansregular';
 $surf: 'surfregular';
 $wisdom: 'wisdom_script_airegular';
+$ffmeta: "ff-meta-serif-web-pro","Georgia","Cambria","Times New Roman","Times",serif;
 
 * {
 	font-size: 62.5%; // 10px / 16px
@@ -83,7 +84,7 @@ a {
 p {
 	font-size: 1.3em; // 20px / 10px
 	color: $gray-middle;
-	font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+	font-family: $ffmeta;
 	font-weight: normal;
 	font-style: normal;
 	line-height: 1.8em;

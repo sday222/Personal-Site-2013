@@ -254,7 +254,6 @@ nav#page-navigation ul li a:hover, nav#page-navigation ul li a:focus {
 }
 
 img.circle {
-  border: 8px #1abc9c solid;
   -webkit-border-radius: 1000px;
   -moz-border-radius: 1000px;
   -ms-border-radius: 1000px;

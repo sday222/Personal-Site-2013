@@ -8,6 +8,16 @@
 @import "includes/type";
 
 // import page layouts
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear:both;
+}
+.clearfix {
+	zoom: 1; /* IE6&7 */
+}
 body {
 	background-color: $white;
 }
@@ -97,13 +107,25 @@ nav#page-navigation {
 	}
 	
 }
-img.circle {
+
+.circle {
 	// border: 8px $turq solid; // doesnt need to be a % because we are using box-sizing: border-box
 	@include border-radius(1000px);
+	float:left;
+}
+
+div.box-circle {
+	@extend .circle;
 	margin: 1.7%;
 	width: 29.333333333%;
 	height: 29.333333333%;
 	@include box-sizing(border-box);
+	border: 8px solid $turq;
+}
+article.excerpt {
+	padding-bottom: 2em;
+	border-bottom: 1px solid $gray-light;	
+	margin-bottom: 2em;
 }
 
 /* FOOTER SECTION */

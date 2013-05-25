@@ -1,6 +1,3 @@
-site_name: 'Sean Day'
-markdown: rdiscount
-rdiscount:
-	extensions:[smart]
-permalink: /post/:title
-paginate: 6
+site_name: 'Sean Day - Designer & Developer'
+description: 'Random babblings of Sean Day' 
+permalink: /posts/:title

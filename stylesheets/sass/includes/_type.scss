@@ -43,6 +43,7 @@ $ffmeta: "ff-meta-serif-web-pro","Georgia","Cambria","Times New Roman","Times",s
 * {
 	font-size: 62.5%; // 10px / 16px
 	line-height: 62.5%; // 10px / 16px
+	text-rendering: optimizeLegibility;
 }
 
 h1, h2 {
@@ -92,7 +93,6 @@ p {
 		color: $red;
 		text-decoration: underline;
 		font-style: italic;
-		font-weight: bold;
 		&:visited {
 			color: $red;
 		}
@@ -100,9 +100,4 @@ p {
 			color: $turq;
 		}
 	}
-}
-::selection, ::-moz-selection {
-	background-color: $turq-accent;
-	color: $gray-dark;
-	text-decoration: none;
 }

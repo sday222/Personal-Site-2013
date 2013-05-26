@@ -35,7 +35,7 @@ header#main-header {
 
 footer#main-footer {
 	width: 100%;
-	border-bottom: 20px $red solid;
+	//border-bottom: 20px $red solid;
 }
 
 nav#main-navigation, section#body-content, div.container {
@@ -43,6 +43,21 @@ nav#main-navigation, section#body-content, div.container {
 	width: 63.6896047%; // 870px / 1366px (mac book air)
 	max-width: 870px; // width dictator
 	margin:0 auto;
+}
+section#about {
+	margin: 0 auto;
+	width: 25%;
+	max-width: 870px;
+	margin-top: 80px;
+	text-align: center;
+	p {
+		text-align: left;
+		margin-top:40px;
+	}
+	img.mugshot {
+		width: 20%;
+		@include border-radius(500px);
+	}
 }
 
 /* MAIN NAVIGATION */

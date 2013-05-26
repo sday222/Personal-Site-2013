@@ -180,13 +180,32 @@ header#main-header {
 
 footer#main-footer {
   width: 100%;
-  border-bottom: 20px #e74c3c solid;
 }
 
 nav#main-navigation, section#body-content, div.container {
   width: 63.6896047%;
   max-width: 870px;
   margin: 0 auto;
+}
+
+section#about {
+  margin: 0 auto;
+  width: 25%;
+  max-width: 870px;
+  margin-top: 80px;
+  text-align: center;
+}
+section#about p {
+  text-align: left;
+  margin-top: 40px;
+}
+section#about img.mugshot {
+  width: 20%;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  -ms-border-radius: 500px;
+  -o-border-radius: 500px;
+  border-radius: 500px;
 }
 
 /* MAIN NAVIGATION */

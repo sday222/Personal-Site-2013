@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-			{% for post in site.posts limit: 7 %}
+			{% for post in paginator.posts %}
 			
 				{% if post.custom_type == 'text' %}
 					<article class="excerpt clearfix">

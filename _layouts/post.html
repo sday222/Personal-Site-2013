@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+		<!-- MAIN BODY CONTENT and ARTICLE TYPES -->
+		{% if page.custom_type == 'text' %}
+			<article>
+				<header class="post-header">
+					<h2>{{page.title}}</h2>
+					<p class="meta">
+						<time pubdate>{{page.date | date_to_string}}</time>
+					</p>
+				</header>
+				<p class="clearfix">{{content}}</p>
+			</article>
+			
+		{% elsif page.custom_type == 'three_image' %}	
+			<article class="clearfix">
+				<header class="post-header">
+					<h2>{{page.title}}</h2>
+					<p class="meta">
+						<time pubdate>{{page.date | date_to_string}}</time>
+					</p>
+				</header>
+				<p class="clearfix">
+					<div class="box-circle clearfix"><a href="{{page.image_a_link}}" target="_blank"><img class="circle" src="{{page.image_a_url}}" /></a></div>
+					<div class="box-circle clearfix"><a href="{{page.image_b_link}}" target="_blank"><img class="circle" src="{{page.image_b_url}}" /></a></div>
+					<div class="box-circle clearfix"><a href="{{page.image_c_link}}" target="_blank"><img class="circle" src="{{page.image_c_url}}" /></a></div>
+				</p>
+				{% if content %}
+					<p>{{content}}</p>
+				{% endif %}
+			</article>
+			
+		{% elsif page.custom_type == 'single_image' %}	
+			<article class="clearfix">
+				<header class="post-header">
+					<h2>{{page.title}}</h2>
+					<p class="meta">
+						<time pubdate>{{page.date | date_to_string}}</time>
+					</p>
+				</header>
+				<p class="clearfix">
+					<img class="full-width" src="{{page.image_url}}" />
+				</p>
+				{% if content %}
+					<p>{{content}}</p>
+				{% endif %}
+			</article>
+		{% endif %}

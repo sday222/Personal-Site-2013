@@ -212,7 +212,7 @@ section#about img.mugshot {
 nav#main-navigation {
   text-align: center;
 }
-nav#main-navigation h1, nav#main-navigation h3, nav#main-navigation h4, nav#main-navigation h5, nav#main-navigation h6, nav#main-navigation p.meta {
+nav#main-navigation h1 a, nav#main-navigation h3 a, nav#main-navigation h4 a, nav#main-navigation h5 a, nav#main-navigation h6 a, nav#main-navigation p.meta a {
   text-indent: -9999em;
   background: url("../../images/logo.svg") no-repeat center center;
   background-size: 100% 100%;

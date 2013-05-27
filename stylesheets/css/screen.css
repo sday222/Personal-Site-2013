@@ -200,7 +200,8 @@ section#about p {
   margin-top: 40px;
 }
 section#about img.mugshot {
-  width: 20%;
+  width: 142px;
+  height: 142px;
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
   -ms-border-radius: 500px;

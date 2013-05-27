@@ -55,7 +55,8 @@ section#about {
 		margin-top:40px;
 	}
 	img.mugshot {
-		width: 20%;
+		width: 142px;
+		height: 142px;
 		@include border-radius(500px);
 	}
 }

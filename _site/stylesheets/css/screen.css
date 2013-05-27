@@ -212,12 +212,16 @@ section#about img.mugshot {
 nav#main-navigation {
   text-align: center;
 }
-nav#main-navigation h1, nav#main-navigation h3, nav#main-navigation h4, nav#main-navigation h5, nav#main-navigation h6, nav#main-navigation p.meta {
+nav#main-navigation h1 a, nav#main-navigation h3 a, nav#main-navigation h4 a, nav#main-navigation h5 a, nav#main-navigation h6 a, nav#main-navigation p.meta a {
   text-indent: -9999em;
   background: url("../../images/logo.svg") no-repeat center center;
   background-size: 100% 100%;
   width: 163px;
   height: 163px;
+  display: block;
+}
+nav#main-navigation h1 a:hover, nav#main-navigation h3 a:hover, nav#main-navigation h4 a:hover, nav#main-navigation h5 a:hover, nav#main-navigation h6 a:hover, nav#main-navigation p.meta a:hover, nav#main-navigation h1 a:focus, nav#main-navigation h3 a:focus, nav#main-navigation h4 a:focus, nav#main-navigation h5 a:focus, nav#main-navigation h6 a:focus, nav#main-navigation p.meta a:focus {
+  border-bottom: none !important;
 }
 
 nav#main-navigation ul li {

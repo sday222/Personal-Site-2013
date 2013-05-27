@@ -63,12 +63,16 @@ section#about {
 /* MAIN NAVIGATION */
 nav#main-navigation {
 	text-align: center;
-	h1 {
+	h1 a {
 		text-indent: -9999em;
 		background:url('../../images/logo.svg') no-repeat center center;
 		background-size: 100% 100%;
 		width: 163px;
 		height: 163px;
+		display: block;
+		&:hover, &:focus {
+			border-bottom: none !important;
+		}
 	}
 }
 

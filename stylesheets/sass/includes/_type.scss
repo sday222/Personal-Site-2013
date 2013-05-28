@@ -2,11 +2,11 @@
 
 @font-face {
     font-family: 'quaver_sansregular';
-    src: url('../../fonts/quaversans-webfont.eot');
-    src: url('../../fonts/quaversans-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/quaversans-webfont.woff') format('woff'),
-         url('../../fonts/quaversans-webfont.ttf') format('truetype'),
-         url('../../fonts/quaversans-webfont.svg#quaver_sansregular') format('svg');
+    src: url('/fonts/quaversans-webfont.eot');
+    src: url('/fonts/quaversans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/quaversans-webfont.woff') format('woff'),
+         url('/fonts/quaversans-webfont.ttf') format('truetype'),
+         url('/fonts/quaversans-webfont.svg#quaver_sansregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -14,31 +14,44 @@
 
 @font-face {
     font-family: 'surfregular';
-    src: url('../../fonts/surf-webfont.eot');
-    src: url('../../fonts/surf-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/surf-webfont.woff') format('woff'),
-         url('../../fonts/surf-webfont.ttf') format('truetype'),
-         url('../../fonts/surf-webfont.svg#surfregular') format('svg');
+    src: url('/fonts/surf-webfont.eot');
+    src: url('/fonts/surf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/surf-webfont.woff') format('woff'),
+         url('/fonts/surf-webfont.ttf') format('truetype'),
+         url('/fonts/surf-webfont.svg#surfregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
+
 @font-face {
-    font-family: 'wisdom_script_airegular';
-    src: url('../../fonts/wisdom_script-webfont.eot');
-    src: url('../../fonts/wisdom_script-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/wisdom_script-webfont.woff') format('woff'),
-         url('../../fonts/wisdom_script-webfont.ttf') format('truetype'),
-         url('../../fonts/wisdom_script-webfont.svg#wisdom_script_airegular') format('svg');
+    font-family: 'mission_scriptregular';
+    src: url('/fonts/mission-script-webfont.eot');
+    src: url('/fonts/mission-script-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/mission-script-webfont.woff') format('woff'),
+         url('/fonts/mission-script-webfont.ttf') format('truetype'),
+         url('/fonts/mission-script-webfont.svg#mission_scriptregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
+
+/* @font-face {
+    font-family: 'wisdom_script_airegular';
+    src: url('/fonts/wisdom_script-webfont.eot');
+    src: url('/fonts/wisdom_script-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/wisdom_script-webfont.woff') format('woff'),
+         url('/fonts/wisdom_script-webfont.ttf') format('truetype'),
+         url('/fonts/wisdom_script-webfont.svg#wisdom_script_airegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} */
 
 // store the font-families in variables
 $quaver: 'quaver_sansregular';
 $surf: 'surfregular';
 $wisdom: 'wisdom_script_airegular';
 $ffmeta: "ff-meta-serif-web-pro","Georgia","Cambria","Times New Roman","Times",serif;
+$mission: "mission_scriptregular", "Georgia", "Cambria", "Times New Roman", "Times", serif;
 
 * {
 	font-size: 62.5%; // 10px / 16px
@@ -47,11 +60,12 @@ $ffmeta: "ff-meta-serif-web-pro","Georgia","Cambria","Times New Roman","Times",s
 }
 
 h1, h2 {
-	font-family: $surf;
-	font-size: 2.4em; // 53px / 10px
-	color: $gray-middle;
-	text-transform: uppercase;
-	color: $gray-dark;
+	font-family: $mission;
+	font-size: 3.5em; // 53px / 10px
+	line-height:1em;
+	text-transform: capitalize;
+	color: $secondary;
+	overflow: visible;
 	a {
 		text-decoration: none;
 		color: inherit;
@@ -73,8 +87,12 @@ h2 + p.meta {
 
 p.meta {
 	@extend h1;
-	font-size: 1.6em;
-	color: $turq;
+	font-family: $surf;
+	text-transform: uppercase;
+	font-size: 1.4em;
+	color: $gray-dark;
+	margin-bottom: 1em;
+	margin-top: -15px;
 }
 
 a {
@@ -84,20 +102,20 @@ a {
 
 p {
 	font-size: 1.3em; // 20px / 10px
-	color: $gray-middle;
+	color: $gray-dark;
 	font-family: $ffmeta;
 	font-weight: normal;
 	font-style: normal;
 	line-height: 1.8em;
 	a {
-		color: $red;
+		color: $primary;
 		text-decoration: underline;
 		font-style: italic;
 		&:visited {
-			color: $red;
+			color: $primary;
 		}
 		&:hover, &:focus {
-			color: $turq;
+			color: $secondary;
 		}
 	}
 }

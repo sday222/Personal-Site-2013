@@ -16,12 +16,12 @@ layout: default
 					
 				{% elsif post.custom_type == 'three_image' %}	
 					<article class="excerpt clearfix">
-						<header class="post-header">
+						<!-- <header class="post-header">
 							<h2><a href="{{post.url}}">{{post.title}}</a></h2>
 							<p class="meta">
 								<time pubdate>{{post.date | date_to_string}}</time>
 							</p>
-						</header>
+						</header> -->
 						<p class="post-excerpt clearfix">
 							<div class="box-circle clearfix"><a href="{{post.image_a_link}}" target="_blank"><img class="circle" src="{{post.image_a_url}}" /></a></div>
 							<div class="box-circle clearfix"><a href="{{post.image_b_link}}" target="_blank"><img class="circle" src="{{post.image_b_url}}" /></a></div>
@@ -63,9 +63,9 @@ layout: default
 					{% endif %}
 					<li>&nbsp;</li>
 					{% if paginator.next_page %}
-					<li><a href="/page{{paginator.next_page}}">Older &raquo;</a></li>
+						<li><a href="/page{{paginator.next_page}}">Older &raquo;</a></li>
 					{% else %}
-					<li>Older &raquo;</li>
+						<li>Older &raquo;</li>
 					{% endif %}
 				</ul>
 			</nav>
